@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;   
+    font-weight: 600;
+    
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Barlow;
+    width: 1440px;
+
+}
+
+#hero{
+    background-image: url('/images/photos/image-header.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+
+ul li a:hover {
+    padding: 15px;
+    border: solid white;
+    border-radius: 35%;
+    background-color: white;
+    color: black;
+    
+}
+ul li a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: white;
+}
+
+#header-title{
+    position: relative;
+    top: 15%;
+    left: 35%;
+    color: white;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+
+#arrow-down{
+    position: relative;
+    top: 27%;
+    left: 50%;
+}
+
+/*brand section*/
+
+#brand{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+
+}
+.brand-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.brand-title{
+    margin-bottom: 1rem;
+    width: 60%;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  hsl(212, 27%, 19%);
+
+}
+#brand-text{
+    width: 60%;
+    font-size: medium;
+    color: gray;
+}
+
+.brand-help {
+ text-decoration: none;
+ margin-top: 3rem;
+ color: black;
+ position: relative;
+ left: -10rem;
+ font-family: 'Fraunces', serif;
+ color:  hsl(212, 27%, 19%);
+}
+#brand-line1{
+    position: relative;
+    width: 135px;
+    height: 6px;
+    background-color:hsl(51,100%, 49%);
+    top: -5px;
+    left: -10rem;
+}
+#brand-line2{
+    position: relative;
+    width: 135px;
+    height: 6px;
+    background-color: hsl(7, 99%,70%);
+    top: -5px;
+    left: -10rem;
+
+
+}
+
+
+.brand-img{
+    flex: 1;
+}
+
+#brand2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*graphic section*/
+
+#graphic{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+}
+
+
+.graphic-left{
+    flex: 1;
+    background-image: url('/images/photos/image-graphic-design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.graphic-right{
+    background-image: url('./images/photos/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic-text{
+width: 60%;
+font-size: medium;
+margin-top: 1rem;
+color:hsl(167, 62%, 24%) ;
+}
+
+.graphic-title{
+    margin-top: 16rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 27%, 19%);
+}
+
+
+
+/*Client section*/
+#client{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+#client-title{
+    color: rgb(160, 145, 145);
+    margin-bottom: 2rem;
+    font-family: 'Fraunces', serif;
+}
+.clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-img{
+    border-radius: 50%;
+    margin-bottom: 6rem;
+}
+
+.client-text{
+    width: 80%;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.client-name{
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 0.5rem;
+    color:  hsl(212, 27%, 19%);
+}
+
+.client-job{
+    font-size: medium;
+    color: grey;
+}
+
+/*images section*/
+#images{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+
+.image{
+    flex: 1;
+    width: 450px;
+    height: 450px;
+}
+
+
+/*footer sesctino*/
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 1450px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(168, 34%, 41%);
+}
+
+#footer-title{
+    font-weight: bold;
+    margin-bottom: 3rem;
+    font-family: 'Fraunces', serif;
+    color:  hsl(212, 27%, 19%);
+    
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    
+}
+#icons a {
+    margin: 0 1.5rem;
+    margin-top: 1rem;
+    
+
+}
+
