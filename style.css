@@ -3,8 +3,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     font-family: 'Barlow', sans-serif;   
     font-weight: 600;
     
@@ -16,7 +15,7 @@ body{
     flex-direction: column;
     font-size: 18px;
     font-family: Barlow;
-    width: 1440px;
+    max-width: 1440px;
 
 }
 
@@ -80,7 +79,7 @@ ul li a {
     display: flex;
     flex-direction: row;
     height: 80vh;
-    width: 100%;
+    max-width: 100%;
 
 }
 .brand-info{
@@ -299,4 +298,261 @@ footer{
     
 
 }
+
+
+/*ipad section*/
+
+@media (max-width:900px) and (min-width:700px){
+    #hero{
+        max-width: 890px;
+        background-size: cover;
+        background-position: center;
+    }
+    #header-title{
+        padding-right: 60px;
+        font-size: 1.6rem;
+    
+    }
+
+
+        #brand{
+            max-width: 890px;
+            height: 420px;
+        }
+        #brand2{
+            height: 420px;
+        }
+        .brand-img{
+            width: 400px;
+            
+        }
+        .brand-title{
+            font-size: 1.7rem;
+        }
+        #brand-text{
+            font-size: 1.2rem;
+        }
+        .brand-help{
+            position: relative;
+            left:0.5rem
+        }
+        #brand-line1{
+            position: relative;
+            left: 0.5rem;
+        }
+
+        #brand-line2{
+            left: 0.5rem;
+        }
+
+
+        #graphic{
+            display: flex;
+            flex-direction: row;
+            max-width: 890px;
+            height: 420px;
+        }
+        #client{
+            max-width: 890px;
+            height: 1500px;
+        }
+        .client-cont{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        #images{
+            max-width: 890px;
+            height: 700px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer{
+            max-width: 845px;
+        }
+
+
+
+}
+
+
+
+@media (max-width:700px){
+ 
+    #hero{
+        max-width: 670px;
+        background-size: cover;
+        background-position: center;
+    }
+    #header-title{
+        padding-right: 60px;
+        font-size: 1.4rem;
+    
+    }
+    nav h1{
+        font-size: 1rem;
+    }
+    li a {
+        font-size: 1rem;
+    
+    }
+
+    /*brand sesction */
+    #brand{
+        max-width: 670px;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    
+    }
+    .brand-title{
+        font-size: 1.5rem;
+        position: relative;
+        left: -2rem;   
+    }
+    #brand-text{
+        position: relative;
+        left: -2rem;
+    }
+    .brand-img{
+    position: relative;
+    left: -100px;
+    
+    }
+    #brand .brand-help{
+        font-size: 13px;
+    }
+    #brand #brand-line1{
+        width: 100px;
+    }
+    #brand2{
+        max-width: 670px;
+        display: flex;
+        flex-direction: column;
+    }
+    #brand2 .brand-info .brand-title{
+        position: relative;
+        top: 12rem;
+        left: -6rem;
+        
+    }
+    #brand2 .brand-info #brand-text{
+        position: relative;
+        top: 14rem;
+        left: -7rem;
+    }
+    #brand2 .brand-img{
+        position: relative;
+        top: 30rem;
+        margin-bottom: 35rem;
+    }
+
+    #brand2 .brand-help{
+        font-size: 11px;
+        position: relative;
+        top: 15rem;
+        
+    }
+    #brand-line2{
+        width: 90px;
+        position: relative;
+        top: 15rem;
+        
+    }
+
+
+    /*Graphic sesction*/
+
+    #graphic{
+        max-width: 670px;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+    
+    .graphic-text{
+        margin-bottom: 1rem;
+    }
+    .graphic-right{
+        position: relative;
+        
+    }
+
+    .graphic-left,.graphic-right{
+     background-position: center;
+    }
+
+
+    /*Client section*/
+    #client {
+        height: 1200px;
+        max-width: 670px;
+
+    }
+    .client-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    #client-title, .client-cont{
+        position: relative;
+        font-size: 1.3rem;
+    }
+    .client-text{
+        font-size: 13px;
+        position: relative;
+        top: -2rem;
+    }
+    .client-img{
+        width: 100px;
+        height: 100px;
+    }
+    .client-name{
+        font-size: 1.1rem;
+        position: relative;
+        top: -5rem;
+    }
+    .client-job{
+        font-size: 11px;
+        position: relative;
+        top: -5rem;
+    }
+
+
+    /*images section*/
+    #images{
+        max-width: 670px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #images .image{
+        width: 300px;
+        height: 300px;
+    }
+
+    /*Footer sesction*/
+    footer{
+        max-width: 670px;
+
+    }
+    #footer-title{
+        position: relative;
+        right: 2rem;
+    
+    }
+    .nav-bar{
+        position: relative;
+        right: 2rem;
+    }
+    #icons{
+        position: relative;
+        right: 2rem;
+        display: flex;
+        
+    }
+
+}
+
+
 
